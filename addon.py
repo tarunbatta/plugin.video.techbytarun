@@ -55,7 +55,7 @@ elif mode[0] == 'channel':
 	#xbmcgui.Dialog().ok('DEBUG', grabContent[0])
 
 	playlistUrl = 'https://www.googleapis.com/youtube/v3/playlists'
-	params = {'key': 'AIzaSyC7YrCyuR9fccM3aSpGcfZhAvVynfyc53k', 'part': 'snippet', 'channelId': args['chanID'][0]}
+	params = {'key': '', 'part': 'snippet', 'channelId': args['chanID'][0]}
 	url = '%s?%s' % (playlistUrl, urllib.urlencode(params))
 	response = urllib.urlopen(url).read()
 	data = json.loads(response)
